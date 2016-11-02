@@ -42,8 +42,13 @@ Variable Descriptions:
 These are descriptions of the variables found in settings.sh that must be edited before submitting the job.
 
 FASTA_DIR="/path/to/fasta(or fastq)/files"
+
 FORMAT="f" or "q" (f = fasta format, q = fastq format)
+
 INDEX_DIR="/path/to/bt2/index"
+
 INDEX_BASE="basename" of the Bowtie 2 index files as named during bowtie2-build
+
 OUT_DIR="/path/to/store/screened/reads"
+
 THREADS="number cpus" 
