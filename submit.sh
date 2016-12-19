@@ -1,10 +1,11 @@
 #!/bin/bash
 
+./init-host-screen.pl6
+
 source ./settings.sh
 
 if [[ ! -d "$FASTA_DIR" ]]; then
-  echo "$FASTA_DIR does not exist. Directory created, but make sure FASTA files are there before you continue. Job terminated."
-  mkdir -p "$FASTA_DIR"
+  echo "$FASTA_DIR does not exist. Job terminated."
   exit 1
 fi
 

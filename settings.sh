@@ -6,19 +6,19 @@ export CWD=$PWD
 export SCRIPT_DIR="$CWD/scripts"
 
 #Fasta/q directory containing files to screen
-export FASTA_DIR="/path/to/fasta(or fastq)/files"
+export FASTA_DIR="$1"
 
 #FASTA or FASTQ format? (f = fasta (default), q = fastq)
-export FORMAT="q (or f; f = fasta format, q = fastq format)"
+export FORMAT="$2"
 
 #Bowtie2 index directory path AND index basename
-export INDEX_DIR="/path/to/bt2/index"
+export INDEX_DIR="$3"
 
 #Bowtie2 index basenames (human_index.1.bt2 = human_index)
-export INDEX_BASE="basename"
+export INDEX_BASE="$4"
 
 #Output directory
-export OUT_DIR="$CWD/screened"
+export OUT_DIR="$5"
 
 #Number of CPU Threads
 export THREADS="4"
